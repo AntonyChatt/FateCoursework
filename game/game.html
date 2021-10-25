@@ -7,14 +7,89 @@
     <title>Game</title>
 </head>
 <body>
-    <div class="enemies"></div>
-    <div class="party"></div>
-    <div class="profile"></div>
-    <div class="attack"></div>
-<div class="chose"></div>
-<div class="turn"></div>
-<div id="battle_start">
-    <span></span>
-</div>
+    <div id="game">
+        <div class="enemies">
+            <div id="giles">
+                <img src="src/EnemyServant.png">
+                <div class="enemy_info">
+                    <div>
+                        <div class="class_giles"></div>
+                        <div class="class_title_giles"></div>
+                    </div>
+                    <div>
+                        <div>Giles de Rais</div>
+                        <div class="bar enemy_bar"><div id="giles_hp"></div><div id="giles_hp_amount">5,567</div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="skeleton">
+                <img src="src/Skeleton.png">
+                <div class="enemy_info">
+                    <div>
+                        <div class="class_skeleton"></div>
+                    </div>
+                    <div>
+                        <div>Skeleton</div>
+                        <div class="bar enemy_bar"><div id="skeleton_hp"></div><div id="skeleton_hp_amount">567</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="party">
+            <div id="mash_sprite" class="gggg">
+                <img src="src/Mash_sprite.png">
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile_image">
+                <div id="skill">
+                </div>
+            </div>
+            <div class="profile_info">
+                <div>
+                    <div class="class"></div>
+                    <div class="class_title"></div>
+                </div>
+                <div  class="servant_info">
+                    <div class="bar">HP <div id="hp"></div><div id="hp_amount">14,567</div></div>
+                    <div class="bar">NP <div id="np"></div><div id="np_amount">0%</div></div>
+                    <div>Lv.70 Mash</div>
+                </div>
+            </div>
+        </div>
+        <div id="attack">
+            <div class="attack_text"></div>
+        </div>
+        <div class="chose"></div>
+        <div class="turn"></div>
+    </div>
+    <div id="battle_start">
+        <span>Battle start</span>
+    </div>
+    <div id="attack_screen">
+        <div class="attack_list">
+            <div id="buster_card">
+                <div class="profile_image card_image"></div>
+                <div class="buster_splash"><div class="buster_icon"></div></div>
+            </div>
+            <div id="quick_card">
+                <div class="profile_image card_image"></div>
+                <div class="quick_splash"><div class="quick_icon"></div></div>
+            </div>
+            <div id="quick_card_1">
+                <div class="profile_image card_image"></div>
+                <div class="quick_splash"><div class="quick_icon"></div></div>
+            </div>
+            <div id="art_card">
+                <div class="profile_image card_image"></div>
+                <div class="art_splash"><div class="art_icon"></div></div>
+            </div>
+            <div id="art_card_1">
+                <div class="profile_image card_image"></div>
+                <div class="art_splash"><div class="art_icon"></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"> </script>
 </body>
 </html>
