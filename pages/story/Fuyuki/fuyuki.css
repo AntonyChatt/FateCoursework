@@ -1,0 +1,227 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url(./../../../src/fuyukiMap.jpg)no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+    width: calc(100vw / 9);
+    height: 100vh;
+}
+
+.mapPoint {
+    display: block;
+    width: 7vw;
+    background: radial-gradient(50% 50%, #FAECD5, transparent);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.mapPoint:hover {
+    filter: brightness(160%);
+}
+
+.point1 {
+    position: sticky;
+    top: 45vh;
+    margin-left: 2vw;
+}
+
+.point2 {
+    position: sticky;
+    top: 70vh;
+    margin-left: 2vw;
+}
+
+.point3 {
+    position: sticky;
+    top: 61vh;
+}
+
+.point4 {
+    position: sticky;
+    top: 32vh;
+}
+
+.point5 {
+    position: sticky;
+    top: 74vh;
+    margin-left: 3vw;
+}
+
+.point6 {
+    position: sticky;
+    top: 50vh;
+    margin-left: 2vw;
+}
+
+.point7 {
+    position: sticky;
+    top: 25vh;
+    margin-left: -5vw;
+}
+
+.point8 {
+    position: sticky;
+    top: 70vh;
+}
+
+.unavailable {
+    filter: grayscale(100%);
+    cursor: auto;
+}
+
+.hidden_menu {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    width: 200px;
+    background: linear-gradient(to left, deepskyblue, steelblue);
+    border-top-left-radius: 50px;
+    border-top: 4px solid silver;
+    border-left: 4px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    font-weight: bold;
+    font-size: 28px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 70%;
+    height: 70%;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+
+.terminal_master {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    width: 1000px;
+    background: linear-gradient(to left, transparent 10%,  rgba(0, 0, 139, 0.8));
+}
+
+.master_photo > img,
+.master_seal > img {
+    clip-path: polygon(50% 0, 100% 50%,
+    50% 100%, 0 50%);
+}
+
+.master_seal > img {
+    transform: scale(0.4);
+}
+
+.master_photo {
+    position: absolute;
+    left: 10px;
+    top: -110px;
+}
+
+.master_seal {
+    position: absolute;
+    left: -85px;
+    top: -65px;
+    height: 90px;
+}
+
+.master_present > img,
+.master_missions >img {
+    width: 70px;
+    height: 70px;
+}
+
+.master_present {
+    position: absolute;
+    left: 540px;
+    top: 25px;
+}
+
+.master_missions {
+    position: absolute;
+    left: 650px;
+    top: 25px;
+}
+
+.master_level {
+    position: absolute;
+    left: 260px;
+    top: 0;
+}
+
+.master_ap {
+    position: absolute;
+    left: 200px;
+    top: 52px;
+}
+
+.golden {
+    font-size: 28px;
+    font-weight: bold;
+    color: #cd9d3b;
+    text-shadow: 0 0 0.3em white, 3px 3px 0.7em black;
+}
+
+.silver {
+    color: white;
+    font-size: 20px;
+}
+.bar {
+    display: block;
+    height: 10px;
+    width: 220px;
+    background-color: #cd9d3b;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+.terminal_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: linear-gradient(to left, rgba(0, 191, 255, 0.3), rgba(70, 130, 180, 0.3));
+    display: flex;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.header_news {
+    width: 100px;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    color: darkblue;
+    position: relative;
+    margin-left: 30px;
+}
+
+.header_news::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    border: 30px solid transparent; border-right: 30px solid white;
+}

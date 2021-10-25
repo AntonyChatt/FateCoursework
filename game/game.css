@@ -1,0 +1,9 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("src/F3.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
