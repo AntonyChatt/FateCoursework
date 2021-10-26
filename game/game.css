@@ -6,6 +6,7 @@ body {
     background: url("src/F3.png") no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 #game {
@@ -51,22 +52,22 @@ body {
 }
 
 .party {
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 300px;
     position: absolute;
-    top: 350px;
-    right: 120px;
+    top: 150px;
+    right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .enemies {
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 300px;
     position: absolute;
-    top: 350px;
-    left: 320px;
+    top: 150px;
+    left: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +88,7 @@ body {
 #mash_sprite > img,
 #skeleton >img,
 #giles >img {
-    height: 400px;
+    height: 300px;
 }
 
 #mash_sprite {
@@ -250,7 +251,6 @@ body {
 #buster_card, #quick_card, #quick_card_1, #art_card, #art_card_1 {
     width: 124px;
     height: 160px;
-    transform: scale(1.6);
     position: relative;
     cursor: pointer;
 }
@@ -309,9 +309,15 @@ body {
 
 .in_attack {
     filter: brightness(110%);
+    box-shadow: 0 0 40px rgb(188, 178, 61);
+}
+.in_attack_servant {
+    background-image:linear-gradient( to top, rgb(114, 15, 15), transparent);
+
 }
 
 .unavailable {
-    filter: grayscale(100%);
-    cursor: auto;
+    filter: brightness(30%)!important;
+    cursor: auto!important;
+
 }
