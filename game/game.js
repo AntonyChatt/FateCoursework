@@ -102,6 +102,7 @@ function attack() {
         setTimeout(() =>Shit(1), 3000);
         setTimeout(() =>Shit(2), 5000);
         setTimeout(() =>ATK=[], 6000);
+        setTimeout(() =>check(), 8000);
     }
     else if (giles > 0) {
         setTimeout(() =>Ghit(0), 1000);
@@ -152,6 +153,9 @@ function Shit(i) {
             sHP.innerText = `${skeleton}`;
             sHPwidth.style.width = `${skeleton*108/567}px`;
         }
+        np = np + 20;
+        myNP.innerText = `${np}%`;
+        myNPwidth.style.width = `${np*108/100}px`;
     }
 }
 
@@ -216,6 +220,9 @@ function check() {
             document.getElementById('battle_start').style.display = 'flex';
             document.getElementById('battle_start').innerHTML = '<span>Battle finish</span>';
         }, 4000);
+        setTimeout(() => {
+            window.location.href = './../pages/story/Fuyuki/fuyuki.html';
+        }, 8000)
     }
 }
 
